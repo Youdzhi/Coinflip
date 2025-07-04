@@ -1,0 +1,708 @@
+{
+  "mod_elements": [
+    {
+      "name": "BronzeCoin",
+      "type": "animateditem",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bronze_coin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/youdzi/coinflip/item/renderer/BronzeCoinItemRenderer.java",
+          "src/main/resources/assets/coinflip/models/item/bronze_coin.json",
+          "src/main/java/net/youdzi/coinflip/item/BronzeCoinItem.java",
+          "src/main/java/net/youdzi/coinflip/item/model/BronzeCoinItemModel.java"
+        ]
+      }
+    },
+    {
+      "name": "BronzeCoinBlock",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bronze_coin_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/youdzi/coinflip/block/display/BronzeCoinBlockDisplayItem.java",
+          "src/main/java/net/youdzi/coinflip/block/model/BronzeCoinBlockBlockModel.java",
+          "src/main/java/net/youdzi/coinflip/block/renderer/BronzeCoinBlockDisplayItemRenderer.java",
+          "src/main/java/net/youdzi/coinflip/block/model/BronzeCoinBlockDisplayModel.java",
+          "src/main/java/net/youdzi/coinflip/block/entity/BronzeCoinBlockTileEntity.java",
+          "src/main/java/net/youdzi/coinflip/block/BronzeCoinBlockBlock.java",
+          "src/main/resources/assets/coinflip/models/item/bronze_coin_block.json",
+          "src/main/java/net/youdzi/coinflip/block/renderer/BronzeCoinBlockTileRenderer.java",
+          "src/main/resources/assets/coinflip/blockstates/bronze_coin_block.json",
+          "src/main/resources/assets/coinflip/models/custom/bronze_coin_block_particle.json"
+        ]
+      }
+    },
+    {
+      "name": "BronzeCoinRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bronze_coin_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/youdzi/coinflip/procedures/BronzeCoinRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ShowCoin",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_coin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/youdzi/coinflip/procedures/ShowCoinProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "win",
+            "type": "logic"
+          },
+          {
+            "name": "type",
+            "type": "string"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BronzeCoinBlockBlockAdded",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bronze_coin_block_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/youdzi/coinflip/procedures/BronzeCoinBlockBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SilverCoinBlock",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "silver_coin_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/youdzi/coinflip/block/renderer/SilverCoinBlockTileRenderer.java",
+          "src/main/java/net/youdzi/coinflip/block/display/SilverCoinBlockDisplayItem.java",
+          "src/main/java/net/youdzi/coinflip/block/entity/SilverCoinBlockTileEntity.java",
+          "src/main/java/net/youdzi/coinflip/block/model/SilverCoinBlockDisplayModel.java",
+          "src/main/java/net/youdzi/coinflip/block/SilverCoinBlockBlock.java",
+          "src/main/resources/assets/coinflip/blockstates/silver_coin_block.json",
+          "src/main/java/net/youdzi/coinflip/block/model/SilverCoinBlockBlockModel.java",
+          "src/main/java/net/youdzi/coinflip/block/renderer/SilverCoinBlockDisplayItemRenderer.java",
+          "src/main/resources/assets/coinflip/models/item/silver_coin_block.json",
+          "src/main/resources/assets/coinflip/models/custom/silver_coin_block_particle.json"
+        ]
+      }
+    },
+    {
+      "name": "SilverCoinBlockAdded",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "silver_coin_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/youdzi/coinflip/procedures/SilverCoinBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GoldCoinBlock",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_coin_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/coinflip/models/custom/gold_coin_block_particle.json",
+          "src/main/java/net/youdzi/coinflip/block/renderer/GoldCoinBlockTileRenderer.java",
+          "src/main/resources/assets/coinflip/blockstates/gold_coin_block.json",
+          "src/main/java/net/youdzi/coinflip/block/display/GoldCoinBlockDisplayItem.java",
+          "src/main/resources/assets/coinflip/models/item/gold_coin_block.json",
+          "src/main/java/net/youdzi/coinflip/block/model/GoldCoinBlockDisplayModel.java",
+          "src/main/java/net/youdzi/coinflip/block/entity/GoldCoinBlockTileEntity.java",
+          "src/main/java/net/youdzi/coinflip/block/renderer/GoldCoinBlockDisplayItemRenderer.java",
+          "src/main/java/net/youdzi/coinflip/block/model/GoldCoinBlockBlockModel.java",
+          "src/main/java/net/youdzi/coinflip/block/GoldCoinBlockBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "GoldCoinBlockAdded",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_coin_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/youdzi/coinflip/procedures/GoldCoinBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ShowLooseBronze",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "show_loose_bronze",
+      "metadata": {
+        "files": [
+          "src/main/java/net/youdzi/coinflip/procedures/ShowLooseBronzeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SilverCoin",
+      "type": "animateditem",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "silver_coin",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/coinflip/models/item/silver_coin.json",
+          "src/main/java/net/youdzi/coinflip/item/renderer/SilverCoinItemRenderer.java",
+          "src/main/java/net/youdzi/coinflip/item/SilverCoinItem.java",
+          "src/main/java/net/youdzi/coinflip/item/model/SilverCoinItemModel.java"
+        ]
+      }
+    },
+    {
+      "name": "SilverCoinRMBblock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "silver_coin_rm_bblock",
+      "metadata": {
+        "files": [
+          "src/main/java/net/youdzi/coinflip/procedures/SilverCoinRMBblockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GoldCoin",
+      "type": "animateditem",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_coin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/youdzi/coinflip/item/GoldCoinItem.java",
+          "src/main/resources/assets/coinflip/models/item/gold_coin.json",
+          "src/main/java/net/youdzi/coinflip/item/model/GoldCoinItemModel.java",
+          "src/main/java/net/youdzi/coinflip/item/renderer/GoldCoinItemRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "GoldCoinRMBblock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_coin_rm_bblock",
+      "metadata": {
+        "files": [
+          "src/main/java/net/youdzi/coinflip/procedures/GoldCoinRMBblockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ShowLooseSilver",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "show_loose_silver",
+      "metadata": {
+        "files": [
+          "src/main/java/net/youdzi/coinflip/procedures/ShowLooseSilverProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ShowLooseGold",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "show_loose_gold",
+      "metadata": {
+        "files": [
+          "src/main/java/net/youdzi/coinflip/procedures/ShowLooseGoldProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RevertedBronzeCoin",
+      "type": "animateditem",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reverted_bronze_coin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/youdzi/coinflip/item/model/RevertedBronzeCoinItemModel.java",
+          "src/main/resources/assets/coinflip/models/item/reverted_bronze_coin.json",
+          "src/main/java/net/youdzi/coinflip/item/RevertedBronzeCoinItem.java",
+          "src/main/java/net/youdzi/coinflip/item/renderer/RevertedBronzeCoinItemRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "RevertedGoldCoin",
+      "type": "animateditem",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reverted_gold_coin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/youdzi/coinflip/item/RevertedGoldCoinItem.java",
+          "src/main/java/net/youdzi/coinflip/item/renderer/RevertedGoldCoinItemRenderer.java",
+          "src/main/resources/assets/coinflip/models/item/reverted_gold_coin.json",
+          "src/main/java/net/youdzi/coinflip/item/model/RevertedGoldCoinItemModel.java"
+        ]
+      }
+    },
+    {
+      "name": "RevertedSilverCoin",
+      "type": "animateditem",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reverted_silver_coin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/youdzi/coinflip/item/RevertedSilverCoinItem.java",
+          "src/main/resources/assets/coinflip/models/item/reverted_silver_coin.json",
+          "src/main/java/net/youdzi/coinflip/item/renderer/RevertedSilverCoinItemRenderer.java",
+          "src/main/java/net/youdzi/coinflip/item/model/RevertedSilverCoinItemModel.java"
+        ]
+      }
+    },
+    {
+      "name": "ShowWinBronze",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "show_win_bronze",
+      "metadata": {
+        "files": [
+          "src/main/java/net/youdzi/coinflip/procedures/ShowWinBronzeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ShowWinSilver",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "show_win_silver",
+      "metadata": {
+        "files": [
+          "src/main/java/net/youdzi/coinflip/procedures/ShowWinSilverProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ShowWinGold",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "show_win_gold",
+      "metadata": {
+        "files": [
+          "src/main/java/net/youdzi/coinflip/procedures/ShowWinGoldProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SetWinCMD",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_win_cmd",
+      "metadata": {
+        "files": [
+          "src/main/java/net/youdzi/coinflip/procedures/SetWinCMDProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Setwin",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setwin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/youdzi/coinflip/command/SetwinCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "CoinFlipper",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coin_flipper",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "CoinBlockClick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coin_block_click",
+      "metadata": {
+        "files": [
+          "src/main/java/net/youdzi/coinflip/procedures/CoinBlockClickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CoinCMD",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coin_cmd",
+      "metadata": {
+        "files": [
+          "src/main/java/net/youdzi/coinflip/procedures/CoinCMDProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Coin",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/youdzi/coinflip/command/CoinCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "CoinSetTotemAnim",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coin_set_totem_anim",
+      "metadata": {
+        "files": [
+          "src/main/java/net/youdzi/coinflip/procedures/CoinSetTotemAnimProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cointotemanimation",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cointotemanimation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/youdzi/coinflip/command/CointotemanimationCommand.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "win",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "showcoin",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item.coinflip.reverted_bronze_coin": "Bronze Coin",
+      "item_group.coinflip.coin_flipper": "ᴄᴏɪɴꜰʟɪᴘᴘᴇʀ [SS]",
+      "item.coinflip.gold_coin": "Gold Coin",
+      "item.coinflip.silver_coin": "Silver Coin",
+      "block.coinflip.bronze_coin_block": "Bronze Coin Block",
+      "item.coinflip.reverted_gold_coin": "Bronze Coin",
+      "block.coinflip.silver_coin_block": "Bronze Coin Block",
+      "item.coinflip.bronze_coin": "Bronze Coin",
+      "item.coinflip.reverted_silver_coin": "Bronze Coin",
+      "block.coinflip.gold_coin_block": "Bronze Coin Block"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "coinflip",
+    "modName": "coinflip",
+    "version": "1.0.0",
+    "author": "Youdzhi",
+    "websiteURL": "https://gato.dev",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "use_compiled_mods",
+      "geckolib"
+    ],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "...",
+    "modElementsPackage": "net.youdzi.coinflip"
+  },
+  "mcreatorVersion": 202400342716
+}

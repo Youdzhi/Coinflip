@@ -1,0 +1,6 @@
+{
+  "parent": "coinflip:displaysettings/coin",
+  "textures": {
+    "layer0": "coinflip:item/gold_coin"
+  }
+}

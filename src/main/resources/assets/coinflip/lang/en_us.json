@@ -1,0 +1,12 @@
+{
+  "item.coinflip.reverted_bronze_coin": "Bronze Coin",
+  "item_group.coinflip.coin_flipper": "ᴄᴏɪɴꜰʟɪᴘᴘᴇʀ [SS]",
+  "item.coinflip.gold_coin": "Gold Coin",
+  "item.coinflip.silver_coin": "Silver Coin",
+  "block.coinflip.bronze_coin_block": "Bronze Coin Block",
+  "item.coinflip.reverted_gold_coin": "Bronze Coin",
+  "block.coinflip.silver_coin_block": "Bronze Coin Block",
+  "item.coinflip.bronze_coin": "Bronze Coin",
+  "item.coinflip.reverted_silver_coin": "Bronze Coin",
+  "block.coinflip.gold_coin_block": "Bronze Coin Block"
+}

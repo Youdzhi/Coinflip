@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "coinflip:custom/silver_coin_block_particle"
+    }
+  }
+}

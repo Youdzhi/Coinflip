@@ -1,0 +1,7 @@
+
+{
+  "parent": "coinflip:displaysettings/coinblock",
+  "textures": {
+    "particle": "coinflip:block/silver_coin"
+  }
+}

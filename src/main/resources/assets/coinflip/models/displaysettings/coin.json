@@ -1,0 +1,42 @@
+{
+  "credit": "Made with Blockbench",
+  "parent": "builtin/entity",
+  "display": {
+    "thirdperson_righthand": {
+      "translation": [
+        0,
+        -1.25,
+        0
+      ]
+    },
+    "firstperson_righthand": {
+      "translation": [
+        0.75,
+        -1.5,
+        0
+      ]
+    },
+    "firstperson_lefthand": {
+      "translation": [
+        1.75,
+        -1.25,
+        0
+      ]
+    },
+    "gui": {
+      "translation": [
+        0,
+        -10.5,
+        0
+      ],
+      "scale": [
+        3,
+        3,
+        3
+      ]
+    }
+  },
+  "textures": {
+    "particle": "item/silver_coin"
+  }
+}
